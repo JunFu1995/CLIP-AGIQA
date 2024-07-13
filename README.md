@@ -4,7 +4,8 @@
 In this letter, we propose visionlanguage consistency guided multi-modal prompt learning for blind AGIQA, dubbed CLIP-AGIQA. Specifically, we introduce learnable textual and visual prompts in language and vision branches of CLIP models, respectively. Moreover, we design a text-to-image alignment quality prediction task, whose learned vision-language consistency knowledge is used to guide the optimization of the above multi-modal prompts. 
 
 ## Train and Test
-First, download datasets from [AGIQA3k](), [AGIQA2023](), and update the following lines in "train_test_clip_auxiliary.py" 
+First, download datasets from [AGIQA3k](), [AGIQA2023](), and update the following lines in ```train_test_clip_auxiliary.py```
+ 
 ```
 path = {
     'AGIQA3k': '/home/fujun/datasets/iqa/AGIQA-3K',
