@@ -1,0 +1,34 @@
+MODEL:
+  BACKBONE:
+    NAME: "ViT-B/32"
+  INIT_WEIGHTS: ""
+
+TRAINER:
+  COOP:
+    N_CTX: 8
+    CTX_INIT: ""
+    PREC: "fp32"
+    CLASS_TOKEN_POSITION: "end"
+    CSC: 0
+    LOCAL_BRANCH: 0
+    N: 8
+    M: 16
+    CLIP_CTX_INIT: "This is a"
+    CLIP_N_CTX: 3
+  COCOOP:
+    N_CTX: 8
+    CTX_INIT: ""
+    PREC: "fp32"
+    CLASS_TOKEN_POSITION: "end"
+    CSC: 0
+  Ours:
+    use_aux: 1
+    text_depth: 12
+    vision_depth: 12
+    lamda: 0.1
+OPTIM:
+  LR: 0.0001
+
+DATASET:
+  CLASS_NAME: ["good_photo", "bad_photo"] 
+
