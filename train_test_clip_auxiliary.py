@@ -242,7 +242,7 @@ def main():
 
     path = {
         'AGIQA3k': '/home/fujun/datasets/iqa/AGIQA-3K',
-        'AGIQA1k': '/home/fujun/datasets/iqa/AGIQA-1K',
+        #'AGIQA1k': '/home/fujun/datasets/iqa/AGIQA-1K',
         'AGIQA2023': '/home/fujun/datasets/iqa/AIGC2023/DATA/'
     }
 
