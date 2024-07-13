@@ -6,7 +6,9 @@ In this letter, we propose visionlanguage consistency guided multi-modal prompt 
 ![xx](./fig/framework.png)
 
 ## Train and Test
-First, download datasets from [AGIQA3k](https://drive.google.com/file/d/1zpIuzdiPk5PIPdpXrfZb3Xq09PpJ-8iO/view?usp=drive_link), [AGIQA2023](https://drive.google.com/file/d/1P91jp6D0LzEx1Y3Cu0M0AqIU3GlvR8ML/view?usp=drive_link), and update the following lines in ```train_test_clip_auxiliary.py```
+First, download datasets from [AGIQA3k](https://drive.google.com/file/d/1zpIuzdiPk5PIPdpXrfZb3Xq09PpJ-8iO/view?usp=drive_link), [AGIQA2023](https://drive.google.com/file/d/1P91jp6D0LzEx1Y3Cu0M0AqIU3GlvR8ML/view?usp=drive_link).
+
+Second, update path of datasets defined in ```train_test_clip_auxiliary.py```
 
 ```
 path = {
@@ -15,11 +17,11 @@ path = {
 }
 ```
 
-Second, train and test the model using the following command:
+Third, train and test the model using the following command:
 ```
 python train_test_clip_auxiliary.py --dataset AGIQA3k --model AGIQA
 ```
-The results are recorded in the folder "./log".
+Finally, check the results in the folder `./log`.
 
 ## Acknowledgement
 This project is based on [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning), [DBCNN](https://github.com/zwx8981/DBCNN-PyTorch), and [CLIP-IQA](https://github.com/IceClear/CLIP-IQA). Thanks for these awesome works.
