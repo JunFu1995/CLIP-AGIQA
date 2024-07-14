@@ -121,7 +121,7 @@ class IQAManager(object):
         num_total = 0
         pscores = []
         tscores = []
-        batch_size = 8
+        batch_size = 128
         test_data = {}
         for X, y, z,  path , _ in data_loader:
             # Data.
