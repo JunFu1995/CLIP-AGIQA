@@ -169,15 +169,15 @@ def main():
     parser.add_argument('--weight_decay', dest='weight_decay', type=float,
                         default=5e-4, help='Weight decay.')
     parser.add_argument('--dataset', dest='dataset', type=str, default='AGIQA3k',
-                        help='dataset: live|csiq|tid2013|livec|mlive')
-    parser.add_argument('--model', dest='model', type=str, default='CNNIQA',
-                        help='dataset: live|csiq|tid2013|livec|mlive')   
+                        help='dataset: AGIQA3k|AGIQA2023')
+    parser.add_argument('--model', dest='model', type=str, default='AGIQA',
+                        help='model:AGIQA')   
     parser.add_argument('--n_ctx', dest='n_ctx', type=int, default=8,
-                        help='dataset: live|csiq|tid2013|livec|mlive')   
+                        help='n_ctx: prompt length')   
     parser.add_argument('--gpuid', type=str, default='0', help='GPU ID')
     parser.add_argument('--percentage', type=float, default=0.8, help='training portion')
     parser.add_argument('--cfgname', dest='cfgname', type=str, default='cfg_8',
-                        help='dataset: live|csiq|tid2013|livec|mlive')
+                        help='cfgname: configuration for prompting learning')
     args = parser.parse_args()
     os.environ['CUDA_VISIBLE_DEVICES'] = args.gpuid
 
