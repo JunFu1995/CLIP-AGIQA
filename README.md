@@ -27,7 +27,7 @@ Finally, check the results in the folder `./log`.
 This project is based on [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning), [DBCNN](https://github.com/zwx8981/DBCNN-PyTorch), and [CLIP-IQA](https://github.com/IceClear/CLIP-IQA). Thanks for these awesome works.
 
 ## Citation
-Please cite the following paper if you use this repository in your reseach.
+Please cite the following paper if you use this repository in your research.
 ```
 @article{fu2024vision,
   title={Vision-Language Consistency Guided Multi-modal Prompt Learning for Blind AI Generated Image Quality Assessment},
